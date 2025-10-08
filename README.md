@@ -3,9 +3,6 @@
 팀원 : [허명범](https://github.com/MyungBeomHer)
 
 ### 프로젝트 주제 
-음성인식/github.com/MyungBeomHer)
-
-### 프로젝트 주제 
 음성 인식 모델 개발
 
 ### 프로젝트 언어 및 환경
@@ -13,29 +10,6 @@
 
 ### Dataset
 - [Zeroth-korean Dataset](https://huggingface.co/datasets/kresnik/zeroth_korean?utm_source=chatgpt.com)
-
-### NER tagset
-- 총 8개의 태그가 있음
-    - PER: 사람이름
-    - LOC: 지명
-    - ORG: 기관명
-    - POH: 기타
-    - DAT: 날짜
-    - TIM: 시간
-    - DUR: 기간
-    - MNY: 통화
-    - PNT: 비율
-    - NOH: 기타 수량표현
-- 개체의 범주 
-    - 개체이름: 사람이름(PER), 지명(LOC), 기관명(ORG), 기타(POH)
-    - 시간표현: 날짜(DAT), 시간(TIM), 기간 (DUR)
-    - 수량표현: 통화(MNY), 비율(PNT), 기타 수량표현(NOH)
-
-## ➡️ Data Preparation
-```bash
-cd data_in/NER-master/
-unzip 말뭉치\ -\ 형태소_개체명/.zip
-```
 
 ### Requirements
 ```bash
