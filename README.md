@@ -60,7 +60,7 @@ for n,p in model.named_parameters():
 
 - Benchmark (Zeroth-Korean Dataset)
 
-|Model|Denoiser|Trainable Params|WER|
+|Model|Denoiser|Trainable Params|WER(↓)|
 |:------:|:------:|:---:|:---:|
 |Whisper|X|769M|3.64|
 |Whisper|Facebook-denoiser|769M|4.40||
