@@ -66,7 +66,7 @@ for n,p in model.named_parameters():
 |Whisper|Facebook-denoiser|769M|4.40||
 |Whisper|MetricGAN+|769M|23.87||
 |Whisper|DemucsV4|769M|3.72||
-|**Whisper+LORA(ours)**|X|75M|3.62||
+|**Whisper+LORA(ours)**|X|75M|**3.62**||
 
 ### Reference Repo
 - [Whisper](https://github.com/openai/whisper)
