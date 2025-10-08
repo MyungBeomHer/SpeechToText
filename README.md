@@ -10,6 +10,9 @@
 
 ### Dataset
 - [Zeroth-korean Dataset](https://huggingface.co/datasets/kresnik/zeroth_korean?utm_source=chatgpt.com)
+<p align="center">
+  <img src="/figure/zeroth-korean.png" width=100%> <br>
+</p>
 
 ### SETUP
 ```bash
