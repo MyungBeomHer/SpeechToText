@@ -1,15 +1,18 @@
-## AI based korean Named Entity Recognizer
+## AI based Speech-To-Text
 
 팀원 : [허명범](https://github.com/MyungBeomHer)
 
 ### 프로젝트 주제 
-한국어 개체명 인식기
+음성인식/github.com/MyungBeomHer)
+
+### 프로젝트 주제 
+음성 인식 모델 개발
 
 ### 프로젝트 언어 및 환경
 프로젝트 언어 : Pytorch
 
 ### Dataset
-- [NER Dataset from 한국해양대학교 자연언어처리 연구실](https://github.com/kmounlp/NER)
+- [Zeroth-korean Dataset](https://huggingface.co/datasets/kresnik/zeroth_korean?utm_source=chatgpt.com)
 
 ### NER tagset
 - 총 8개의 태그가 있음
@@ -39,16 +42,17 @@ unzip 말뭉치\ -\ 형태소_개체명/.zip
 pip install -r requirements.txt
 ```
 
-### train
+### 1st train
 ```bash
-python train_bert_crf.py 
+CUDA_VISIBLE_DEVICES=2,3 torchrun --nproc_per_node=2 main.py
 ```
 
-### inference
+### next train (you already downloaded the dataset and safetensors of model. So you can not download them one more time.)
 ```bash
-python inference.py 
+export HF_HOME=/data/.cache/huggingface
+export HF_DATASETS_CACHE=$HF_HOME/datasets
+CUDA_VISIBLE_DEVICES=2,3 torchrun --nproc_per_node=2 main.py
 ```
-
 
 ### Model
 <p align="center">
