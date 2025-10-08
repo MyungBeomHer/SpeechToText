@@ -34,6 +34,8 @@ CUDA_VISIBLE_DEVICES=2,3 torchrun --nproc_per_node=2 main.py
 </p>
 
 ```
+model = WhisperForConditionalGeneration.from_pretrained(MODEL_ID,use_safetensors=True)
+
 target_modules = ["q_proj", "k_proj", "v_proj", "out_proj"]
 
 from peft import LoraConfig, get_peft_model
