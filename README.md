@@ -1,4 +1,4 @@
-## AI based Speech-To-Text
+## AI based Speech-To-Text (Whisper + LORA)
 
 팀원 : [허명범](https://github.com/MyungBeomHer)
 
