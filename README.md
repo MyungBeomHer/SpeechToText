@@ -12,6 +12,11 @@
 - [Zeroth-korean Dataset](https://huggingface.co/datasets/kresnik/zeroth_korean?utm_source=chatgpt.com)
 
 ### SETUP
+```bash
+conda create -n STT
+conda activate STT
+pip install -r requirements.txt
+```
 It also requires the command-line tool [ffmpeg](https://ffmpeg.org/) to be installed on your system, which is available from most package managers:
 ```bash
 # on Ubuntu or Debian
@@ -29,13 +34,6 @@ choco install ffmpeg
 # on Windows using Scoop (https://scoop.sh/)
 scoop install ffmpeg
 ```
-
-```bash
-conda create -n STT
-conda activate STT
-pip install -r requirements.txt
-```
-
 If you are error in the deocoder, you use this command
 ```bash
 conda install -c conda-forge "ffmpeg>=6,<8" libsndfile
