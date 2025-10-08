@@ -72,3 +72,7 @@ for n,p in model.named_parameters():
 - [Whisper](https://github.com/openai/whisper)
 - [Whisper Finetuned by Zeroth-Korean Dataset](https://huggingface.co/seastar105/whisper-medium-ko-zeroth)
 - [Zeroth-Korean Dataset](https://huggingface.co/datasets/kresnik/zeroth_korean?utm_source=chatgpt.com)
+- [Facebook denoiser](https://github.com/facebookresearch/denoiser)
+- [MetricGAN+](https://github.com/wooseok-shin/MetricGAN-plus-pytorch)
+- [Demucs](https://github.com/facebookresearch/demucs)
+- [LORA](https://github.com/huggingface/peft)
