@@ -91,7 +91,7 @@ model = get_peft_model(model, peft_cfg)
 for p in model.parameters():
     p.requires_grad_(False)
 for n,p in model.named_parameters():
-    if "lora_" in n:  # PEFT가 붙인 LoRA 파라미터 이름
+    if "lora_" in n:  
         p.requires_grad_(True)
 
 def print_trainable(m):
