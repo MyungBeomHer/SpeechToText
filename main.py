@@ -87,9 +87,7 @@ peft_cfg = LoraConfig(
     bias="none",
     target_modules=target_modules,
 )
-# rank (8~32) hidden_dim / # scaling 벡터에 곱해지는 가중치 
 model = get_peft_model(model, peft_cfg)
-# (선택) 모든 파라미터 끄고 LoRA만 켜기 — 가장 확실
 for p in model.parameters():
     p.requires_grad_(False)
 for n,p in model.named_parameters():
